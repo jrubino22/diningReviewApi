@@ -10,7 +10,6 @@ import jakarta.persistence.Column;
 
 @Entity
 @Getter
-@Setter
 @NoArgsConstructor
 public class User {
     @Id
@@ -18,10 +17,16 @@ public class User {
     private Long id;
     @Column(unique = true)
     private String displayName;
+    @Setter
     private String city;
+    @Setter
     private String state;
+    @Setter
     private Integer zipcode;
+    @Setter
     private Boolean isPeanutAllergies;
+    @Setter
     private Boolean isEggAllergies;
+    @Setter
     private Boolean isDairyAllergies;
 }

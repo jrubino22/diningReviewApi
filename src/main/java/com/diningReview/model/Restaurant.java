@@ -15,6 +15,8 @@ public class Restaurant {
     @Id
     @GeneratedValue
     private Long id;
+    private String name;
+    private String zipCode;
     private Integer peanutScore;
     private Integer eggScore;
     private Integer dairyScore;
